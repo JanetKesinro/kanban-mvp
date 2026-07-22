@@ -2,8 +2,8 @@
 
 A simple, client-rendered Kanban board built with Next.js and dnd-kit.
 
-![Kanban Board - Default](public/screenshot1.png)
-![Kanban Board - Custom Cards](public/screenshot2.png)
+![Kanban Board Preview](public/kanban-preview.png)
+
 ## Features
 
 - 5 fixed columns (can be renamed)
@@ -50,3 +50,8 @@ Run E2E tests:
 ```bash
 npm run e2e
 ```
+
+## Application Screenshots
+
+![Kanban Board - Default](public/screenshot1.png)
+![Kanban Board - Custom Cards](public/screenshot2.png)
