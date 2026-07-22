@@ -1,0 +1,99 @@
+:root {
+  --color-accent-yellow: #ecad0a;
+  --color-blue-primary: #209dd7;
+  --color-purple-secondary: #753991;
+  --color-dark-navy: #032147;
+  --color-gray-text: #888888;
+  --color-bg: #f8fafc;
+  --color-column-bg: #ffffff;
+  --color-card-bg: #ffffff;
+  --color-border: #e2e8f0;
+  --color-card-shadow: rgba(0, 0, 0, 0.05);
+  
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-dark-navy);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-dark-navy);
+  font-weight: 600;
+}
+
+a {
+  color: var(--color-blue-primary);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-family);
+  border: none;
+  background: none;
+}
+
+/* Micro-animations and utility classes */
+.btn-primary {
+  background-color: var(--color-purple-secondary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: transform 0.1s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  background-color: #65317d;
+  box-shadow: 0 4px 12px rgba(117, 57, 145, 0.25);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.icon-btn {
+  color: var(--color-gray-text);
+  transition: color 0.2s ease;
+  padding: 0.25rem;
+  border-radius: 4px;
+}
+
+.icon-btn:hover {
+  color: var(--color-dark-navy);
+  background-color: rgba(0,0,0,0.05);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray-text);
+}

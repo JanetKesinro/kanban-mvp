@@ -1,0 +1,74 @@
+.card {
+  position: relative;
+  background-color: var(--color-card-bg);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px var(--color-card-shadow);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  display: flex;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.dragging {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.dragHandle {
+  flex: 1;
+  display: flex;
+  cursor: grab;
+  touch-action: none;
+}
+
+.dragHandle:active {
+  cursor: grabbing;
+}
+
+.accentLine {
+  width: 4px;
+  background-color: var(--color-accent-yellow);
+  flex-shrink: 0;
+}
+
+.content {
+  padding: 1rem;
+  flex: 1;
+}
+
+.title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--color-dark-navy);
+  word-break: break-word;
+}
+
+.details {
+  font-size: 0.8125rem;
+  color: var(--color-gray-text);
+  line-height: 1.4;
+  margin: 0;
+  word-break: break-word;
+}
+
+.deleteBtn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  opacity: 0;
+  color: #ef4444;
+}
+
+.card:hover .deleteBtn {
+  opacity: 1;
+}
+
+.deleteBtn:hover {
+  background-color: #fee2e2;
+  color: #dc2626;
+}

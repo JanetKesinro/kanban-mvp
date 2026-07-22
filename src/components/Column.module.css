@@ -1,0 +1,95 @@
+.column {
+  background-color: var(--color-column-bg);
+  border-radius: 12px;
+  width: 320px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--color-border);
+}
+
+.header {
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+  flex: 1;
+}
+
+.cardCount {
+  background-color: #f1f5f9;
+  color: var(--color-gray-text);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+}
+
+.editBtn {
+  opacity: 0;
+}
+
+.titleContainer:hover .editBtn {
+  opacity: 1;
+}
+
+.editTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.titleInput {
+  flex: 1;
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--color-blue-primary);
+  border-radius: 4px;
+  outline: none;
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+  min-height: 10px;
+}
+
+.addCardBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background-color: transparent;
+  color: var(--color-purple-secondary);
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px dashed var(--color-purple-secondary);
+  transition: all 0.2s ease;
+}
+
+.addCardBtn:hover {
+  background-color: var(--color-purple-secondary);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(117, 57, 145, 0.2);
+}
